@@ -20,4 +20,4 @@ Adding a Dynamic Cart and Sign in
 
 #Demo of WebApp
 
-<img src= "https://media.giphy.com/media/cL4xLybgogrhrTu0rE/giphy.gif" width=200><br>
+<img src= "https://media.giphy.com/media/iIMc4qdIcEDhQOD9zR/source.gif" width=200><br>
