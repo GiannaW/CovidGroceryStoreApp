@@ -1,0 +1,199 @@
+<!-- Grocery App Team :D
+CSC-435 / Spring 2020
+Final Project -->
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<meta charset="UTF-8"> 
+
+	<title>Online Orders</title> 
+
+	<!-- reset stylesheet, gets rid of default styling --> 
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+
+	<!-- FONTS: -->
+	<link href="https://fonts.googleapis.com/css?family=Libre+Franklin:200,300,400,700&display=swap" rel="stylesheet">
+
+	<!-- CSS: -->
+	<link href="style/global_style.css" rel="stylesheet">
+	<link href="style/order_style.css" rel="stylesheet">
+	
+	<!-- JAVASCRIPT -->
+	<script src="order_script.js" type="text/javascript"></script>
+	
+</head>
+
+<body>
+
+	<nav>
+	  <a href ="index.html" id="one">Home</a>
+      <a href ="about.html" class="other">About </a>
+      <a href ="order.html" class="other">Order </a>
+	</nav>
+
+	<header>
+        <h1>Online Order</h1>
+        <p>Fresh groceries delivered safety to your door </p>
+        <img src="images/ice-cream.png" alt="illustration of person with giant ice cream"> 
+	</header>
+
+	<main> 
+
+		<section id="signin"> 
+
+			<div id="not_signed_in"> 
+	  			<form id="login">
+	    			<h3> Sign In </h3>
+	    			<div class="form">
+	      				<label for="name"><b>Name:</b></label>
+	      				<input id="username" type="text" name="name" placeholder="Enter Your Name" required><br>
+
+	      				<label for="name"><b>Email:</b></label>
+	      				<input type="text" name="email" placeholder="Enter Your Email" required><br>
+
+	      				<button id="signin_submit_button">SIGN IN</button>
+	        		</div>
+				</form>
+			</div> <!-- end not_signed_in div --> 
+
+			<div id="signed_in" class="hidden"> 
+				<h3 id="username_welcome"> </h3>
+				<p> We're so excited you're here! </p>
+				<button id="sign_out_button"> SIGN OUT </button>
+			</div> <!-- end signed_in div -->
+
+		</section> <!-- end sign in section --> 
+
+		<section id="item_section">
+
+			<h2> Items </h2>
+
+			<div id="item_parent_container"> 
+
+			<!-- ITEM 1 --> 
+			<article id="item1"> 
+				<img src="images/carrot.png" alt="icon of carrot">
+				<h4> Carrot </h4>
+				<p id="carrot_price"> </p>
+
+				<form id="carrot_form">
+				<input type=number name="quantity" id="carrot_quantity" class="quantityField" />
+				</form>
+
+				<button class="add_button" id="carrot_button"> ADD </button>
+
+				<p class="addStatus" id="carrot_status"> </p>
+
+				<p class="stockLevel" id="carrot_stockDOM"> </p>
+
+				<p class="please_note"> Please note: Inventory stock of foods will not change until your cart is submitted </p>
+			</article>
+
+			<!-- ITEM 2 --> 
+			<article id="item2"> 
+				<img src="images/cheese.png" alt="icon of cheese">
+				<h4> Cheese </h4>
+				<p id="cheese_price"> </p>
+
+				<form id="cheese_form">
+				<input type=number name="quantity" id="cheese_quantity" class="quantityField" />
+				</form>
+
+				<button class="add_button" id="cheese_button"> ADD </button>
+
+				<p class="addStatus" id="cheese_status"> </p>
+
+				<p class="stockLevel" id="cheese_stockDOM"> </p>
+
+				<p class="please_note"> Please note: Inventory stock of foods will not change until your cart is submitted </p>
+			</article>
+
+			<!-- ITEM 3 --> 
+			<article id="item3"> 
+				<img src="images/cherry.png" alt="icon of cherry">
+				<h4> Cherry </h4>
+				<p id="cherry_price"> </p>
+
+				<form id="cherry_form">
+				<input type=number name="quantity" id="cherry_quantity" class="quantityField" />
+				</form>
+
+				<button class="add_button" id="cherry_button"> ADD </button>
+
+				<p class="addStatus" id="cherry_status"> </p>
+
+				<p class="stockLevel" id="cherry_stockDOM"> </p>
+
+				<p class="please_note"> Please note: Inventory stock of foods will not change until your cart is submitted </p>
+			</article>
+
+			<!-- ITEM 4 --> 
+			<article id="item4"> 
+				<img src="images/corn.png" alt="icon of corn">
+				<h4> Corn </h4>
+				<p id="corn_price"> </p>
+
+				<form id="corn_form">
+				<input type=number name="quantity" id="corn_quantity" class="quantityField" />
+				</form>
+
+				<button class="add_button" id="corn_button"> ADD </button>
+
+				<p class="addStatus" id="corn_status"> </p>
+
+				<p class="stockLevel" id="corn_stockDOM"> </p>
+
+				<p class="please_note"> Please note: Inventory stock of foods will not change until your cart is submitted </p>
+			</article>
+
+			<!-- ITEM 5  -->
+			<article id="item5"> 
+				<img src="images/cucumber.png" alt="icon of cucumber">
+				<h4> Cucumber </h4>
+				<p id="cucumber_price"> </p>
+
+				<form id="cucumber_form">
+				<input type=number name="quantity" id="cucumber_quantity" class="quantityField" />
+				</form>
+
+				<button class="add_button" id="cucumber_button"> ADD </button>
+
+				<p class="addStatus" id="cucumber_status"> </p>
+
+				<p class="stockLevel" id="cucumber_stockDOM"> </p>
+
+				<p class="please_note"> Please note: Inventory stock of foods will not change until your cart is submitted </p>
+			</article>
+		
+			<!-- ITEM 6 --> 
+			<article id="item6"> 
+				<img src="images/fish.png" alt="icon of fish">
+				<h4> Fish </h4>
+				<p id="fish_price"> </p>
+
+				<form id="fish_form">
+				<input type=number name="quantity" id="fish_quantity" class="quantityField" />
+				</form>
+
+				<button class="add_button" id="fish_button"> ADD </button>
+
+				<p class="addStatus" id="fish_status"> </p>
+
+				<p class="stockLevel" id="fish_stockDOM"> </p>
+
+				<p class="please_note"> Please note: Inventory stock of foods will not change until your cart is submitted </p>
+			</article>
+
+			</div> <!-- end item parent container --> 
+
+		</section> <!-- end item section --> 
+
+	</main>
+
+	<footer>
+	</footer>
+
+</body>
+</html>

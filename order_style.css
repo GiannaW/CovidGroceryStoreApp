@@ -1,0 +1,160 @@
+/* Grocery App Team :D
+CSC-435 / Spring 2020
+Final Project */ 
+
+/* -------- IMPORTANT NOTE -------- */ 
+
+/*all styling on this sheet is ONLY for specific HTML elements on the order.html page!
+all other global styles can be found on global_style.css */ 
+
+/* -------- TEXT -------- */ 
+.hurray_text {
+  color: green;
+}
+
+.incorrect_text {
+  color: red;
+}
+
+/* -------- BUTTONS -------- */ 
+button  {
+  background-color: #007944;
+  color: white;
+
+  width: 4rem;
+  padding: .90em;
+  margin-right: 2em;
+  margin-bottom: .5em;
+  margin-top: 1.2em;
+
+  font-size: .7rem;
+  font-weight: 600;
+
+  border: none;
+  border-radius: 5px;
+
+  display: inline-block;
+
+  transition: background-color 0.2s ease-in-out;
+}
+
+#signin_submit_button  {
+  background-color: #007944; 
+  color: white;
+
+  width: 7rem;
+  padding: .95em; 
+
+  margin-right: 2em;
+  margin-bottom: .5em; 
+  margin-top: 2em; 
+
+  font-size: .9rem;
+  font-weight: 600;
+
+  border: none; 
+  border-radius: 8px;
+
+  display: inline-block;
+
+  transition: background-color 0.2s ease-in-out;
+}
+
+button:hover {
+  background-color: #075231; 
+}
+
+#signin_submit_button:hover {
+  background-color: #075231; 
+}
+
+#sign_out_button {
+  width: 9em;
+}
+
+/* -------- SIGN IN SECTION -------- */ 
+#signin {
+  /*background-color: #f2f2f2;*/
+  margin-top: 1em;
+}
+
+.form {
+  padding-left: 10px;
+
+}
+
+input[type=text] {
+  width: 30%;
+  padding: 12px 20px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  margin-top: 2em;
+  font-size: .9em;
+  margin-left: 1em;
+}
+
+/* -------- ITEMS SECTION -------- */ 
+
+#item_section {
+  /*for troubleshooting: */ 
+  /*background-color: red;*/ 
+}
+
+#item_parent_container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+}
+
+#item_section article {
+  background-color: white;
+  width: 250px;
+  height: 420px;
+  padding: 20px;
+
+  margin-bottom: 3em;
+  margin-right: 2em; /*space between each bowl*/ 
+
+  box-shadow: 0px 5px 10px 0px rgba(0,0,0,.4);
+  transition: box-shadow .2s;
+}
+
+#item_section article:hover {
+  box-shadow: 0px 8px 15px 0px rgba(0,0,0,.6);
+}
+
+article img {
+  width: 100px;
+  height: 100px; 
+  margin-bottom: .5em;
+  
+  /*centers image:*/
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+article p {
+  font-size: .90em; 
+  margin-bottom: .8em;
+  text-align: left;
+  line-height: 1.4em;
+}
+
+.price {
+  /*font-style: italic;*/
+}
+
+.hidden {
+  display: none;
+}
+
+.addStatus {
+  margin-top: .9em;
+}
+
+.please_note {
+  font-size: .7em;
+}

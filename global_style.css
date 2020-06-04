@@ -1,0 +1,172 @@
+/* Grocery App Team :D
+CSC-435 / Spring 2020
+Final Project */ 
+
+/* ------- OVERALL GLOBAL STYLE ------- */
+
+html {
+  font-size: 18px; 
+  /* sets default base size*/
+}
+
+body {
+  font-family: 'Libre Franklin', sans-serif;
+  background-color: white;
+}
+
+/*note: reason why this isn't included in "body"
+is because I don't want it to affect the nav bar!*/ 
+/*header, main, footer {
+  margin-left: 1.5em; 
+}*/
+
+/* ------- OVERALL TYPE STYLE ------- */
+
+h1, h2, h3, h4 {
+  padding-bottom: .8rem;
+  padding-top: .4rem;
+  font-weight: 700;
+
+}
+
+h1 {
+    font-size: 3.6em;
+}
+
+h2 {
+  font-size: 2.4em;
+}
+
+h3 {
+  font-size: 1.9em;
+}
+
+h4 {
+  font-size: 1.5em;
+}
+
+p {
+    font-weight: 200;
+  line-height: 1.8em;
+}
+
+strong {
+    font-weight: 700;
+}
+
+a {
+  text-decoration: none;
+  color: #c97161;
+  font-weight: 400;
+}
+
+/* ------- NAVIGATION ------- */
+
+nav {
+    text-align: center;
+    text-decoration-color: #EFE0D3;
+    height: 50px;
+    background-color: #007944;
+}
+
+#one {
+    float: left;
+}
+
+.other {
+    float: right;
+}
+
+nav a {
+    color: #efe0d3;
+    text-decoration: none;
+    margin-right: 1em;
+    margin-left: 1em;
+    margin-top: .8em;
+}
+
+
+/* ------- CONTAINERS AND SECTIONS ------- */
+header {
+  color: #007944;
+  padding: 1em;
+  padding-left: 3em;
+  margin-top: 1em;
+  margin-bottom: 2em;
+  height: 10em;
+  background-color: #e6f0b6;
+}
+
+header img {
+  width: 8em;
+  display: inline;
+  float: right;
+  margin-right: 2em;
+}
+
+.illo_style {
+  width: 20em;
+  margin-right: 0em;
+
+  /*flips horizontally: */
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+
+section {
+  padding-left: 3em;
+  margin-bottom: 1.3em;
+}
+
+.box {
+    height: 300px;
+    width: 160px;
+    background-color: #697f68;
+    left: 5px;
+    position: absolute;
+    left: 1px;
+    padding: 10px;
+}
+
+#container img {
+    width: 50px;
+    height: 50px;
+    position: relative;
+    left: -5px;
+    top: -40px;
+    float: right;
+}
+
+.innerbox {
+    height: 100px;
+    width: 100px;
+    left: 30px;
+    position: relative;
+    background-color: white;
+}
+
+#container {
+    height: 100px;
+    width: inherit;
+    background-color: #B96A49;
+}
+
+#bottomhalf {
+    height: 500px;
+    margin-top: 5px;
+    background-color: azure;
+    padding-left: 3em;
+    padding-top: 1em;
+
+}
+
+#bottomhalf a {
+  color: #ff5678;
+  font-weight: 700;
+}
+
+/* ------- FOOTER ------- */
+footer {
+  margin-top: 10em;
+  font-size: .75em;
+}
